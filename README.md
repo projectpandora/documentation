@@ -1,4 +1,4 @@
-# Gatsby Theme Carbon Starter
+# Documentation - Project Pandora
 
 ## What is this?
 
