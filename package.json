@@ -16,5 +16,43 @@
     "gatsby-theme-carbon": "^1.26.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn format:staged",
+      "git add"
+    ],
+    "*.{scss,css}": [
+      "yarn format:staged",
+      "git add"
+    ],
+    "*.md": [
+      "yarn format:staged",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2"
   }
 }
