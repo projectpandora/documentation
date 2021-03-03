@@ -12,13 +12,14 @@
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
-    "format:staged": "prettier --write"
+    "format:staged": "prettier --write",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^2.20.4",
-    "gatsby-theme-carbon": "^1.26.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "gatsby": "^2.24.14",
+    "gatsby-theme-carbon": "^1.27.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "husky": {
     "hooks": {
@@ -54,6 +55,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2"

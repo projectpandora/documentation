@@ -4,12 +4,12 @@ module.exports = {
     description: '',
     keywords: 'project pandora, documentation',
   },
-  pathPrefix: `/documentation`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Carbon Design Gatsby Theme',
+        icon: 'src/images/favicon-32x32.png',
         short_name: 'Gatsby Theme Carbon',
         start_url: '/',
         background_color: '#ffffff',
@@ -17,16 +17,6 @@ module.exports = {
         display: 'browser',
       },
     },
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        mediumAccount: 'carbondesign',
-        repository: {
-          baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-        },
-      },
-    },
+    'gatsby-theme-carbon',
   ],
 };
