@@ -10,7 +10,8 @@ const FirstLeftText = () => <p>Overview</p>;
 const FirstRightText = () => (
   <p>
     Pandora is a <strong>reconnaissance platform</strong> for security engineers
-    and bug hunters. It supports many useful features for daily activities
+    and bug hunters. It aims to automate tedious tasks and encourage
+    collaboration between teammates.
     <a className={calloutLink} href="https://platform.projectpandora.xyz">
       Pandora Dashboard →
     </a>
@@ -22,7 +23,8 @@ const SecondLeftText = () => <p>Get integrated?</p>;
 const SecondRightText = () => (
   <p>
     You can use our public API to integrate into your current system. If there
-    aren't enough to satisfy your need, feel free to <a href="/">contact us</a>.
+    aren't enough to satisfy your need, feel free to{' '}
+    <a href="mailto:theprojectpandora@protonmail.com">contact us</a>.
     <a className={calloutLink} href="https://developers.projectpandora.xyz">
       API Reference →
     </a>
