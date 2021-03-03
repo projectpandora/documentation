@@ -4,15 +4,11 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Github',
-    href: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
+    href: 'https://github.com/projectpandora',
   },
   {
-    title: 'Carbon',
-    href: 'https://www.carbondesignsystem.com',
-  },
-  {
-    title: 'Configuration guide',
-    href: '/guides/configuration',
+    title: 'API Reference',
+    href: 'https://developers.projectpandora.xyz',
   },
 ];
 
